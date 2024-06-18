@@ -1,97 +1,83 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>618手机选购指南 | 我是欢欢的博客</title>
+<meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://eggy315.github.io/favicon.ico?v=1718705640887">
+<link rel="shortcut icon" href="https://eggy315.github.io/favicon.ico?v=1718706813851">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://eggy315.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="嘿，各位小伙伴们！随着618的临近，相信很多人都在计划着给自己换一部新手机。在这个科技飞速发展的时代，手机市场也是百花齐放，让人眼花缭乱。那么，最近到底有哪些手机值得我们去关注和入手呢？今天就来和大家一起探讨一下。
-高端旗舰：
-三星 Gal..." />
-    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://eggy315.github.io">
-        <img src="https://eggy315.github.io/images/avatar.png?v=1718705640887" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://eggy315.github.io">
+        <img class="avatar" src="https://eggy315.github.io/images/avatar.png?v=1718706813851" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://eggy315.github.io">
         <h1 class="site-title">我是欢欢的博客</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页🏠
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签🏷️
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-          <a class="social-link" href="eggy" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      温故而知新
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://eggy315.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">618手机选购指南</h2>
-            <div class="post-date">06-15-2024</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://eggy315.github.io/post-images/618PhoneBuy.jpg')">
+            </div>
+          
+          <h2 class="post-title">618手机选购指南</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 06-15-2024</span>
             
-              <div class="feature-container" style="background-image: url('https://eggy315.github.io/post-images/618PhoneBuy.jpg')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <p>嘿，各位小伙伴们！随着618的临近，相信很多人都在计划着给自己换一部新手机。在这个科技飞速发展的时代，手机市场也是百花齐放，让人眼花缭乱。那么，最近到底有哪些手机值得我们去关注和入手呢？今天就来和大家一起探讨一下。</p>
+          </div>
+          <div class="post-content">
+            <p>嘿，各位小伙伴们！随着618的临近，相信很多人都在计划着给自己换一部新手机。在这个科技飞速发展的时代，手机市场也是百花齐放，让人眼花缭乱。那么，最近到底有哪些手机值得我们去关注和入手呢？今天就来和大家一起探讨一下。</p>
 <p>高端旗舰：<br>
 三星 Galaxy S24 ：拥有顶级的屏幕和强大的性能。<br>
 OPPO Find X7 Pro：外观精致，影像和性能都很出色。<br>
@@ -111,31 +97,45 @@ iQOO Neo9：游戏体验佳，充电效率高。<br>
 红米note13Pro:游戏体验佳，超细四窄边直屏。<br>
 总之，在这个 618，手机市场有着众多的选择。无论是追求极致性能，还是看重拍照体验，亦或是注重性价比，都能找到适合自己的那一款手机。希望大家都能在 618 这个购物狂欢节中，挑选到自己心仪且值得购买的手机，开启更加精彩的智能生活新篇章！</p>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://eggy315.github.io/post/NEW-ios18/">
-                  <h3 class="post-title">
-                    iOS 18新功能速览
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
-
         </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://eggy315.github.io/post/Android-APP2/">
+              <h3 class="post-title">
+                下一篇：安卓必备的宝藏软件「第二期」
+              </h3>
+            </a>
+          </div>
+          
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://eggy315.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -145,13 +145,6 @@ var app = new Vue({
 })
 
 </script>
-
-
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
 
 
 
