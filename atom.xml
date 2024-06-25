@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eggy315.github.io</id>
     <title>我是欢欢的博客</title>
-    <updated>2024-06-24T11:18:49.921Z</updated>
+    <updated>2024-06-25T14:41:58.201Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://eggy315.github.io"/>
     <link rel="self" href="https://eggy315.github.io/atom.xml"/>
@@ -11,11 +11,18 @@
     <icon>https://eggy315.github.io/favicon.ico</icon>
     <rights>All rights reserved 2024, 我是欢欢的博客</rights>
     <entry>
-        <title type="html"><![CDATA[小天才：拿捏人性，怒斩苹果华为，征服万千家长儿童]]></title>
-        <id>https://eggy315.github.io/xiao-tian-cai-na-nie-ren-xing-nu-zhan-ping-guo-hua-wei-zheng-fu-wan-qian-jia-chang-er-tong/</id>
-        <link href="https://eggy315.github.io/xiao-tian-cai-na-nie-ren-xing-nu-zhan-ping-guo-hua-wei-zheng-fu-wan-qian-jia-chang-er-tong/">
+        <title type="html"><![CDATA[客服]]></title>
+        <id>https://eggy315.github.io/ke-fu/</id>
+        <link href="https://eggy315.github.io/ke-fu/">
         </link>
-        <updated>2024-06-24T10:06:37.000Z</updated>
+        <updated>2024-06-25T14:36:37.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小天才：拿捏人性，怒斩苹果华为，征服万千家长儿童]]></title>
+        <id>https://eggy315.github.io/xiao-tian-cai-OK/</id>
+        <link href="https://eggy315.github.io/xiao-tian-cai-OK/">
+        </link>
+        <updated>2024-06-25T10:06:37.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[快速了解一个手机品牌——小米]]></title>
