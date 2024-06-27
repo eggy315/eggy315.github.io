@@ -150,3 +150,14 @@ a:not([class]):hover {
   transition: all 0.5s ease-out;
   animation: s3-rotate 5s infinite linear, s3-opacity 5s infinite;
 }
+
+      body {
+        font-family: "霞骛文楷";
+      }
+
+      @supports (font-variation-settings: normal) {
+        body {
+          font-family: "霞骛文楷";
+        }
+      }
+    

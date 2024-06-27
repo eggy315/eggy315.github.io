@@ -57,7 +57,15 @@
       rel="stylesheet"
       href="https://unpkg.com/photoswipe@4.1.3/dist/default-skin/default-skin.css" />
 
+    
+    <link
+      rel="stylesheet"
+      href="https://eggy315.github.io/media/css/prism-synthwave84.css" />
      
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" />
+    
   </head>
 
   <body>
@@ -131,7 +139,9 @@ iQOO Neo9：游戏体验佳，充电效率高。<br>
           </div>
         </div>
 
-          <footer class="py-12 text-center px-4 md:px-0" v-pre>
+         
+        <div id="vlaine-comment"></div>
+         <footer class="py-12 text-center px-4 md:px-0" v-pre>
   <a href="https://icp.gov.moe/?keyword=20248009" target="_blank">萌ICP备20248009号 </a> ⎮<a href="https://eggy315.github.io/9080-yy">条款与条件</a> ⎮ 我是欢欢的博客©Copyright 2024</a>
 </footer>
 
@@ -227,6 +237,11 @@ iQOO Neo9：游戏体验佳，充电效率高。<br>
 
     <!-- Code Highlight -->
     
+    <script src="https://eggy315.github.io/media/prism.js"></script>
+    <script>
+      Prism.highlightAll()
+    </script>
+    
 
     <script src="https://unpkg.com/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
     <script src="https://unpkg.com/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
@@ -317,6 +332,22 @@ iQOO Neo9：游戏体验佳，充电效率高。<br>
       //初始化
       initImg()
     </script>
-     
+     <script type="application/javascript" src="https://unpkg.com/valine"></script>
+<script type="application/javascript">
+  new Valine({
+    el: '#vlaine-comment',
+    appId: 'BKaqVlsLo2ZcCxvmCbcbdCAg-gzGzoHsz',
+    appKey: 'PJI29Gmy8iXji4ioXckVaK2k',
+    pageSize: '10',
+    notify: 'true',
+    avatar: 'mp',
+    verify: 'true',
+    placeholder: '来都来了，不妨评论一下~',
+    visitor: 'true',
+    highlight: 'true',
+    recordIP: 'true',
+  })
+</script>
+  
   </body>
 </html>
