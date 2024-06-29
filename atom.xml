@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eggy315.github.io</id>
     <title>欢欢的博客</title>
-    <updated>2024-06-29T02:29:15.480Z</updated>
+    <updated>2024-06-29T14:50:04.892Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://eggy315.github.io"/>
     <link rel="self" href="https://eggy315.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://eggy315.github.io/images/avatar.png</logo>
     <icon>https://eggy315.github.io/favicon.ico</icon>
     <rights>All rights reserved 2024, 欢欢的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[历史上的今天「24年6月29日周六」]]></title>
+        <id>https://eggy315.github.io/24629/</id>
+        <link href="https://eggy315.github.io/24629/">
+        </link>
+        <updated>2024-06-29T14:49:27.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[小天才：拿捏人性，怒斩苹果华为，征服万千家长儿童]]></title>
         <id>https://eggy315.github.io/xiao-tian-cai-OK/</id>
@@ -38,14 +45,14 @@
         </link>
         <updated>2024-06-14T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>嘿，各位小伙伴们！随着618的临近，相信很多人都在计划着给自己换一部新手机。在这个科技飞速发展的时代，手机市场也是百花齐放，让人眼花缭乱。那么，最近到底有哪些手机值得我们去关注和入手呢？今天就来和大家一起探讨一下。</p>
-<p>高端旗舰：<br>
+<p>#+高端旗舰：<br>
 三星 Galaxy S24 ：拥有顶级的屏幕和强大的性能。<br>
 OPPO Find X7 Pro：外观精致，影像和性能都很出色。<br>
 华为 Pura70 Pro：影像能力出色，外观设计时尚。<br>
 苹果 iPhone15 Pro:钛金属边框，A17 Pro 仿生芯片。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>嘿，各位小伙伴们！随着618的临近，相信很多人都在计划着给自己换一部新手机。在这个科技飞速发展的时代，手机市场也是百花齐放，让人眼花缭乱。那么，最近到底有哪些手机值得我们去关注和入手呢？今天就来和大家一起探讨一下。</p>
-<p>高端旗舰：<br>
+<p>#+高端旗舰：<br>
 三星 Galaxy S24 ：拥有顶级的屏幕和强大的性能。<br>
 OPPO Find X7 Pro：外观精致，影像和性能都很出色。<br>
 华为 Pura70 Pro：影像能力出色，外观设计时尚。<br>
