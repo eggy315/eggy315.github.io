@@ -1,147 +1,115 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>欢欢的博客</title>
-<link rel="shortcut icon" href="https://eggy315.github.io/favicon.ico" />
-<link
-  href="https://unpkg.com/remixicon@2.2.0/fonts/remixicon.css"
-  rel="stylesheet" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/animate.css@3.7.2/animate.min.css" />
-<link
-  rel="stylesheet"
-  href="https://eggy315.github.io/media/css/tailwind.css" />
-<link rel="stylesheet" href="https://eggy315.github.io/styles/main.css" />
-<link
-  rel="alternate"
-  type="application/atom+xml"
-  title="欢欢的博客 - Atom Feed"
-  href="https://eggy315.github.io/atom.xml" />
+<link rel="shortcut icon" href="https://eggy315.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://eggy315.github.io/media/css/tailwind.css">
+<link rel="stylesheet" href="https://eggy315.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="欢欢的博客 - Atom Feed" href="https://eggy315.github.io/atom.xml">
 
+    
 
+  <meta name="description" content="数码趣闻与蛋仔日常分享地" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-    <meta name="description" content="数码趣闻与蛋仔日常分享地" />
-  </head>
-  <body>
-    <div class="antialiased flex flex-col min-h-screen" id="app">
-      <div
-  class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300"
-  :class="{ 'scroll': scrolled }">
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
   <div class="flex justify-end px-4">
-    <div
-      class="w-8 h-8 flex justify-center items-center rounded-full md:hidden"
-      @click="showMenu = !showMenu">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
       <i class="ri-close-line" v-show="showMenu"></i>
       <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
   </div>
-  <nav
-    class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block"
-    :class="`${ showMenu ? 'block' : 'hidden' }`">
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
     
-    <a
-      href="https://eggy315.github.io"
-      target=""
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      首页
-    </a>
+      <a href="https://eggy315.github.io" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
     
-    <a
-      href="https://eggy315.github.io/tags"
-      target=""
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      标签
-    </a>
+      <a href="https://eggy315.github.io/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
     
-    <a
-      href="https://eggy315.github.io/wei-cheng-nian-quan-tui-gong-gao"
-      target=""
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      支持作者
-    </a>
+      <a href="https://eggy315.github.io/wei-cheng-nian-quan-tui-gong-gao" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        支持作者
+      </a>
     
-    <a
-      href="https://eggy315.github.io/atom.xml"
-      target="_blank"
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      <a href="/post" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+    <a href="https://eggy315.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
       RSS
     </a>
   </nav>
 </div>
 
-
-      <div class="max-w-4xl w-full mx-auto pt-32">
-        <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
-          <i class="ri-hashtag"></i>
-          宝藏软件推荐
-        </h1>
-        <div
-          class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
-          
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/windowsAPP1/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        Windows必备的宝藏软件推荐「第一期」
-      </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-07-02</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      嘿，各位小伙伴们👋！在这个美好的周日❤️，我又来和大家分享啦！
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+        <i class="ri-hashtag"></i>
+        宝藏软件推荐
+      </h1>
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/windowsAPP1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Windows必备的宝藏软件推荐「第一期」
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-07-02</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        嘿，各位小伙伴们👋！在这个美好的周日❤️，我又来和大家分享啦！
 之前一直在为大家推荐各种安卓应用😙，收到了很多不错的反馈🥰。
 今天，我将转换阵地😆，带大家一同探索 Windows 电脑上那些令人惊喜的宝藏软件🤩。
 相信这些软件会给...
-    </div>
-    <a href="https://eggy315.github.io/windowsAPP1/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/Android-APP1/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        安卓必备的宝藏软件「第一期」
+      </div>
+      <a href="https://eggy315.github.io/windowsAPP1/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-06-10</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      首先，做个小调查🤔，各位观众们❤️，手机里都有什么神仙软件呢？有什么理由让你们坚持用下来呢？
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/Android-APP1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          安卓必备的宝藏软件「第一期」
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-06-10</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        首先，做个小调查🤔，各位观众们❤️，手机里都有什么神仙软件呢？有什么理由让你们坚持用下来呢？
 本期就给大家分享一下我的 5 款安卓必备的宝藏软件😘😘——
 第一个，NFC Writer😜
 NFC Writer 是一款实用 NFC 读、...
+      </div>
+      <a href="https://eggy315.github.io/Android-APP1/" class="btn">
+        Read more
+      </a>
     </div>
-    <a href="https://eggy315.github.io/Android-APP1/" class="btn">
-      Read more
-    </a>
+    
   </div>
   
-</div>
+      </div>
 
-
-        </div>
-
-        
- <footer class="py-12 text-center px-4 md:px-0" v-pre>
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
   <a href="https://icp.gov.moe/?keyword=20248009" target="_blank">萌ICP备20248009号 </a>⎮<a href=" https://eggy315.github.io/9080-yy">条款与条件 </a> ⎮我是欢欢的博客©Copyright 2024</a>
 </footer>
 
-      </div>
     </div>
-    <script src="https://unpkg.com/vue@2.7.14/dist/vue.min.js"></script>
-    <script src="https://eggy315.github.io/media/scripts/main.js"></script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://eggy315.github.io/media/scripts/main.js"></script>
+</body>
 </html>

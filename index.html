@@ -1,82 +1,57 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>欢欢的博客</title>
-<link rel="shortcut icon" href="https://eggy315.github.io/favicon.ico" />
-<link
-  href="https://unpkg.com/remixicon@2.2.0/fonts/remixicon.css"
-  rel="stylesheet" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/animate.css@3.7.2/animate.min.css" />
-<link
-  rel="stylesheet"
-  href="https://eggy315.github.io/media/css/tailwind.css" />
-<link rel="stylesheet" href="https://eggy315.github.io/styles/main.css" />
-<link
-  rel="alternate"
-  type="application/atom+xml"
-  title="欢欢的博客 - Atom Feed"
-  href="https://eggy315.github.io/atom.xml" />
+<link rel="shortcut icon" href="https://eggy315.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://eggy315.github.io/media/css/tailwind.css">
+<link rel="stylesheet" href="https://eggy315.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="欢欢的博客 - Atom Feed" href="https://eggy315.github.io/atom.xml">
 
+    
 
+  <meta name="description" content="数码趣闻与蛋仔日常分享地" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-    <meta name="description" content="数码趣闻与蛋仔日常分享地" />
-  </head>
-  <body>
-    <div class="antialiased flex flex-col min-h-screen" id="app">
-      <div
-  class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300"
-  :class="{ 'scroll': scrolled }">
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
   <div class="flex justify-end px-4">
-    <div
-      class="w-8 h-8 flex justify-center items-center rounded-full md:hidden"
-      @click="showMenu = !showMenu">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
       <i class="ri-close-line" v-show="showMenu"></i>
       <i class="ri-menu-3-line" v-show="!showMenu"></i>
     </div>
   </div>
-  <nav
-    class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block"
-    :class="`${ showMenu ? 'block' : 'hidden' }`">
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
     
-    <a
-      href="https://eggy315.github.io"
-      target=""
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      首页
-    </a>
+      <a href="https://eggy315.github.io" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
     
-    <a
-      href="https://eggy315.github.io/tags"
-      target=""
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      标签
-    </a>
+      <a href="https://eggy315.github.io/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
     
-    <a
-      href="https://eggy315.github.io/wei-cheng-nian-quan-tui-gong-gao"
-      target=""
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      支持作者
-    </a>
+      <a href="https://eggy315.github.io/wei-cheng-nian-quan-tui-gong-gao" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        支持作者
+      </a>
     
-    <a
-      href="https://eggy315.github.io/atom.xml"
-      target="_blank"
-      class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      <a href="/post" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+    <a href="https://eggy315.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
       RSS
     </a>
   </nav>
 </div>
 
-
-      <div
-        class="max-w-4xl w-full mx-auto ">
-         <header
-  class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+    <div class="max-w-4xl w-full mx-auto ">
+      
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
   <div class="flex-1 order-2 md:order-1 md:pr-16">
     <div class="text-4xl font-bold text-center md:text-left">
       欢欢的博客
@@ -85,342 +60,333 @@
       数码趣闻与蛋仔日常分享地
     </div>
     
-    <div class="mt-8 text-center md:text-left">
-      <a
-        href="https://eggy315.github.io/about"
-        arget="_blank"
-        class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
-        >关于博主</a
-      >
-    </div>
-     
-    <div class="mt-8 flex items-center">
-             
-      <a
-        href="https://github.com/eggy315"
-        target="_blank"
-        class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
-        <i class="ri-github-line"></i>
-      </a>
-            
-      <a
-        href="https://weibo.com/u/7872044469"
-        target="_blank"
-        class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
-        <i class="ri-weibo-line"></i>
-      </a>
+      <div class="mt-8 text-center md:text-left">
+        <a
+          href="https://eggy315.github.io/about/" 
+          arget="_blank"
+          class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
+        >关于博主</a>
+      </div>
+    
+    
+      <div class="mt-8 flex items-center">
+        
+          <div class="text-gray-500 mr-2">
+            Follow me 👉
+          </div>
+        
+        
           
-      <a
-        href="https://www.zhihu.com/people/75-29-85-28"
-        target="_blank"
-        class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
-        <i class="ri-zhihu-line"></i>
-      </a>
-                    
-    </div>
+        
+          
+            
+              <a href="hellold9@126.com" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-mail-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://github.com/eggy315/" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-github-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+            
+              <a href="https://weibo.com/u/7872044469" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-weibo-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://www.zhihu.com/people/75-29-85-28" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-zhihu-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
     
   </div>
-  <div
-    class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
-    <img
-      class="rounded-full object-cover"
-      src="https://eggy315.github.io/images/avatar.png?v=1720793239234"
-      alt="欢欢的博客"
-      width="100%"
-      height="100%" />
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://eggy315.github.io/images/avatar.png?v=1721308222391" alt="欢欢的博客" width="100%" height="100%">
   </div>
 </header>
- 
+      
 
-        <div
-          class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
-          
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/si-shi-ji-kuai-qian-de-liang-xi-zhi-neng-shou-biao-ti-yan/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        四十几块钱的“惊喜”：智能手表体验
-      </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-07-12</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      诶呦诶呦，你怎么知道我买 Apple watch ultra 啦！
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/Smart-Watch-Experience/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          四十几块钱的“惊喜”：智能手表体验
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-07-12</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        诶呦诶呦，你怎么知道我买 Apple watch ultra 啦！
 
 哈哈，开个玩笑，要是我真买了那可就“大出血”啦！
 实际上，我最近在网上淘到了个宝贝——一款只要四十几块钱的智能手表，而且它的外观居然和高大上的 Apple watch u...
-    </div>
-    <a href="https://eggy315.github.io/si-shi-ji-kuai-qian-de-liang-xi-zhi-neng-shou-biao-ti-yan/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/mian-fei-kan-dian-shi-ruan-jian-xia-zai-shi-yong-jiao-cheng/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        免费看电视软件下载使用教程  
+      </div>
+      <a href="https://eggy315.github.io/Smart-Watch-Experience/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-07-12</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      记得在6月10日我发表了一篇博客叫「安卓必备的宝藏软件（第一期）」，里面有一款叫「影视」的软件吸引了大家，今天，我将为大家分享「影视」详细的下载和使用教程，让您轻松畅享精彩的视听盛宴。
-一、准备工作
-准备一台安卓手机（安卓 2.0 以上，需...
     </div>
-    <a href="https://eggy315.github.io/mian-fei-kan-dian-shi-ruan-jian-xia-zai-shi-yong-jiao-cheng/" class="btn">
-      Read more
-    </a>
+    
   </div>
-  
-</div>
 
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/deng-lu-dan-zi-guo-ji-fu-chao-xiang-xi-jiao-cheng-zhi-nan/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        登录蛋仔国际服：超详细教程指南
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/Free-TV-watching-software-download-and-usage-tutorial/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          免费看电视软件下载使用教程  
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-07-12</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        记得在6月10日我发表了一篇博客叫「安卓必备的宝藏软件（第一期）」，里面有一款叫「影视」的软件吸引了大家，今天，我将为大家分享「影视」详细的下载和使用教程，让您轻松畅享精彩的视听盛宴。
+准备工作
+准备一台安卓手机（安卓 2.0 以上，需有 ...
+      </div>
+      <a href="https://eggy315.github.io/Free-TV-watching-software-download-and-usage-tutorial/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-07-03</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      嘿哟各位游戏大侠们！相信你们也渴望踏上蛋仔国际服的冒险之旅，和全球玩家的互动，那么请跟随以下详细教程，轻松实现登录。
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/Log-in-to-Eggy-Boy-International-Server/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          登录蛋仔国际服：超详细教程指南
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-07-03</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        嘿哟各位游戏大侠们！相信你们也渴望踏上蛋仔国际服的冒险之旅，和全球玩家的互动，那么请跟随以下详细教程，轻松实现登录。
 一、准备工作
-打开应用商店，搜索「ourplay加速器」下载。
+打开应用商店，搜索ourplay加速器下载。
 
 二、获取国际服安装包
-打开「ourplay加速器」，在下...
-    </div>
-    <a href="https://eggy315.github.io/deng-lu-dan-zi-guo-ji-fu-chao-xiang-xi-jiao-cheng-zhi-nan/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/liang-zhu-wen-hua-rang-shi-jie-kan-dao-wen-ming-de-shu-guang/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        良渚文化：让世界看到“文明的曙光”
+打开ourplay加速器，在下方菜单栏...
+      </div>
+      <a href="https://eggy315.github.io/Log-in-to-Eggy-Boy-International-Server/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-07-02</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      家人们，谁懂啊！热门游戏元梦之星和良渚古城进行了令人惊喜的联动！今天，让我们走进良渚古城一探究竟。
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/liang-zhu-wen-hua-rang-shi-jie-kan-dao-wen-ming-de-shu-guang/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          良渚文化：让世界看到“文明的曙光”
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-07-02</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        家人们，谁懂啊！热门游戏元梦之星和良渚古城进行了令人惊喜的联动！今天，让我们走进良渚古城一探究竟。
 
 一、何谓良渚
 良渚古城，是良渚文化遗址的核心区域，位于浙江省杭州市余杭区。良渚文化是距今5300年到4300年，分布在长江三角洲环太湖领域...
-    </div>
-    <a href="https://eggy315.github.io/liang-zhu-wen-hua-rang-shi-jie-kan-dao-wen-ming-de-shu-guang/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/windowsAPP1/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        Windows必备的宝藏软件推荐「第一期」
+      </div>
+      <a href="https://eggy315.github.io/liang-zhu-wen-hua-rang-shi-jie-kan-dao-wen-ming-de-shu-guang/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-07-02</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      嘿，各位小伙伴们👋！在这个美好的周日❤️，我又来和大家分享啦！
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/windowsAPP1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Windows必备的宝藏软件推荐「第一期」
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-07-02</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        嘿，各位小伙伴们👋！在这个美好的周日❤️，我又来和大家分享啦！
 之前一直在为大家推荐各种安卓应用😙，收到了很多不错的反馈🥰。
 今天，我将转换阵地😆，带大家一同探索 Windows 电脑上那些令人惊喜的宝藏软件🤩。
 相信这些软件会给...
-    </div>
-    <a href="https://eggy315.github.io/windowsAPP1/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/xiao-tian-cai-OK/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        小天才：拿捏人性，怒斩苹果华为，征服万千家长儿童
+      </div>
+      <a href="https://eggy315.github.io/windowsAPP1/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-06-25</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      有一款手表让孩子疯狂的程度不亚于蛋仔派对，但却能让家长心甘情愿的掏钱；一款手表配置低，做工糙、外形丑，定价堪比苹果；有一款手表拳打华为，脚踢小米。但市场份额却连年第一，深受追捧。没错，它就是小天才电话手表，当大厂们辛辛苦苦卷技术卷摄像时，小...
     </div>
-    <a href="https://eggy315.github.io/xiao-tian-cai-OK/" class="btn">
-      Read more
-    </a>
+    
   </div>
-  
-</div>
 
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/kuai-su-liao-jie-yi-ge-shou-ji-pin-pai-xiao-mi/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        快速了解一个手机品牌——小米
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/xiao-tian-cai-OK/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          小天才：拿捏人性，怒斩苹果华为，征服万千家长儿童
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-06-25</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        有一款手表让孩子疯狂的程度不亚于蛋仔派对，但却能让家长心甘情愿的掏钱；一款手表配置低，做工糙、外形丑，定价堪比苹果；有一款手表拳打华为，脚踢小米。但市场份额却连年第一，深受追捧。没错，它就是小天才电话手表，当大厂们辛辛苦苦卷技术卷摄像时，小...
+      </div>
+      <a href="https://eggy315.github.io/xiao-tian-cai-OK/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-06-23</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      快速了解一个手机品牌，这期是「小米」
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/kuai-su-liao-jie-yi-ge-shou-ji-pin-pai-xiao-mi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          快速了解一个手机品牌——小米
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-06-23</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        快速了解一个手机品牌，这期是「小米」
 小米是 2010年4月6日由雷布斯成立的，
 
 小米虽然说是打算做手机的，但是小米的第一款产品却不是手机，而是 MIUI系统。
 
 当时的MIUI口碑那比现在好的多，有着精美的界面和丰富的功能，当时手机还没...
-    </div>
-    <a href="https://eggy315.github.io/kuai-su-liao-jie-yi-ge-shou-ji-pin-pai-xiao-mi/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/shou-ji-chong-dian-gong-lu-de-fa-zhan/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        手机充电功率的发展
+      </div>
+      <a href="https://eggy315.github.io/kuai-su-liao-jie-yi-ge-shou-ji-pin-pai-xiao-mi/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-06-22</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      嘿，您知道吗？在近十年的时光长河里，手机充电功率的发展那叫一个迅猛惊人！遥想 2014 年，oppo R7 携带着当时令人瞩目的 20W 闪充横空出世。而时光匆匆，转眼间来到了 2023 年，真我 GT5 居然已经拥有了令人咋舌的 240W...
     </div>
-    <a href="https://eggy315.github.io/shou-ji-chong-dian-gong-lu-de-fa-zhan/" class="btn">
-      Read more
-    </a>
+    
   </div>
-  
-</div>
 
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/618PhoneBuy/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        618手机选购指南
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/shou-ji-chong-dian-gong-lu-de-fa-zhan/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          手机充电功率的发展
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-06-22</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        嘿，您知道吗？在近十年的时光长河里，手机充电功率的发展那叫一个迅猛惊人！遥想 2014 年，oppo R7 携带着当时令人瞩目的 20W 闪充横空出世。而时光匆匆，转眼间来到了 2023 年，真我 GT5 居然已经拥有了令人咋舌的 240W...
+      </div>
+      <a href="https://eggy315.github.io/shou-ji-chong-dian-gong-lu-de-fa-zhan/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-06-15</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      <p>嘿，各位小伙伴们！随着618的临近，相信很多人都在计划着给自己换一部新手机。在这个科技飞速发展的时代，手机市场也是百花齐放，让人眼花缭乱。那么，最近到底有哪些手机值得我们去关注和入手呢？今天就来和大家一起探讨一下。</p>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/618PhoneBuy/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          618手机选购指南
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-06-15</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        <p>嘿，各位小伙伴们！随着618的临近，相信很多人都在计划着给自己换一部新手机。在这个科技飞速发展的时代，手机市场也是百花齐放，让人眼花缭乱。那么，最近到底有哪些手机值得我们去关注和入手呢？今天就来和大家一起探讨一下。</p>
 <p><strong>高端旗舰</strong><br>
 三星 Galaxy S24 ：拥有顶级的屏幕和强大的性能。<br>
 OPPO Find X7 Pro：外观精致，影像和性能都很出色。<br>
 华为 Pura70 Pro：影像能力出色，外观设计时尚。<br>
 苹果 iPhone15 Pro:钛金属边框，A17 Pro 仿生芯片。</p>
 
-    </div>
-    <a href="https://eggy315.github.io/618PhoneBuy/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/ios18-new/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        iOS18新功能速览
+      </div>
+      <a href="https://eggy315.github.io/618PhoneBuy/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-06-12</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      诶呀呀，刚刚我可是全神贯注地看完了那场超级精彩的 WWDC 发布会呀，现在就让我以风驰电掣般的速度赶紧来跟大家分享一下其中最最有用的那 10 个令人眼前一亮的新功能哟。
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/ios18-new/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          iOS18新功能速览
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-06-12</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        诶呀呀，刚刚我可是全神贯注地看完了那场超级精彩的 WWDC 发布会呀，现在就让我以风驰电掣般的速度赶紧来跟大家分享一下其中最最有用的那 10 个令人眼前一亮的新功能哟。
 1.大模型Siri
 今年的Siri外观上从普通内敛的玻璃球变成了炫酷的...
-    </div>
-    <a href="https://eggy315.github.io/ios18-new/" class="btn">
-      Read more
-    </a>
-  </div>
-  
-</div>
-
-<div
-  class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-  
-  <div class="flex-1 order-2 md:order-1">
-    <h2 class="text-2xl font-semibold mb-4">
-      <a
-        href="https://eggy315.github.io/Android-APP1/"
-        class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-        安卓必备的宝藏软件「第一期」
+      </div>
+      <a href="https://eggy315.github.io/ios18-new/" class="btn">
+        Read more
       </a>
-    </h2>
-    <div class="mb-4 text-xs text-gray-500">2024-06-10</div>
-    <div class="mb-4 text-gray-500 dark:text-gray-300">
-      首先，做个小调查🤔，各位观众们❤️，手机里都有什么神仙软件呢？有什么理由让你们坚持用下来呢？
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://eggy315.github.io/Android-APP1/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          安卓必备的宝藏软件「第一期」
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2024-06-10</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        首先，做个小调查🤔，各位观众们❤️，手机里都有什么神仙软件呢？有什么理由让你们坚持用下来呢？
 本期就给大家分享一下我的 5 款安卓必备的宝藏软件😘😘——
 第一个，NFC Writer😜
 NFC Writer 是一款实用 NFC 读、...
+      </div>
+      <a href="https://eggy315.github.io/Android-APP1/" class="btn">
+        Read more
+      </a>
     </div>
-    <a href="https://eggy315.github.io/Android-APP1/" class="btn">
-      Read more
-    </a>
+    
   </div>
   
-</div>
+      </div>
 
-
-        </div>
-
-        
- <footer class="py-12 text-center px-4 md:px-0" v-pre>
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
   <a href="https://icp.gov.moe/?keyword=20248009" target="_blank">萌ICP备20248009号 </a>⎮<a href=" https://eggy315.github.io/9080-yy">条款与条件 </a> ⎮我是欢欢的博客©Copyright 2024</a>
 </footer>
 
-      </div>
     </div>
-    <script src="https://unpkg.com/vue@2.7.14/dist/vue.min.js"></script>
-    <script src="https://eggy315.github.io/media/scripts/main.js"></script>
-  </body>
-  
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://eggy315.github.io/media/scripts/main.js"></script>
+</body>
+
 </html>
