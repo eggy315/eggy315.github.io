@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eggy315.github.io</id>
     <title>欢欢的博客</title>
-    <updated>2024-07-19T03:18:51.543Z</updated>
+    <updated>2024-07-25T14:32:56.500Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://eggy315.github.io"/>
     <link rel="self" href="https://eggy315.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://eggy315.github.io/images/avatar.png</logo>
     <icon>https://eggy315.github.io/favicon.ico</icon>
     <rights>All rights reserved 2024, 欢欢的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[“微软蓝屏”致全球多国多个行业服务瘫痪]]></title>
+        <id>https://eggy315.github.io/jW7hKaiJl/</id>
+        <link href="https://eggy315.github.io/jW7hKaiJl/">
+        </link>
+        <updated>2024-07-20T14:20:52.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[四十几块钱的“惊喜”：智能手表体验]]></title>
         <id>https://eggy315.github.io/Smart-Watch-Experience/</id>
@@ -47,16 +54,9 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[小天才：拿捏人性，怒斩苹果华为，征服万千家长儿童]]></title>
-        <id>https://eggy315.github.io/xiao-tian-cai-OK/</id>
-        <link href="https://eggy315.github.io/xiao-tian-cai-OK/">
+        <id>https://eggy315.github.io/xiao-tian-cai-Mastering-Human-Nature/</id>
+        <link href="https://eggy315.github.io/xiao-tian-cai-Mastering-Human-Nature/">
         </link>
         <updated>2024-06-25T10:06:37.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[快速了解一个手机品牌——小米]]></title>
-        <id>https://eggy315.github.io/kuai-su-liao-jie-yi-ge-shou-ji-pin-pai-xiao-mi/</id>
-        <link href="https://eggy315.github.io/kuai-su-liao-jie-yi-ge-shou-ji-pin-pai-xiao-mi/">
-        </link>
-        <updated>2024-06-23T09:13:51.000Z</updated>
     </entry>
 </feed>
